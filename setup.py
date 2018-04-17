@@ -16,7 +16,7 @@ setup(
     author_email='leslie.kep@gmail.com',
     packages=find_packages(),
     include_package_data=True,
-    url='https://github.com/botswana-harvard/ambition-visit-schedule',
+    url='https://github.com/ambition-study/ambition-visit-schedule',
     license='GPL license, see LICENSE',
     description='ambition viist schedule',
     long_description=README,
