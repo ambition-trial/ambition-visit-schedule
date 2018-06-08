@@ -25,6 +25,7 @@ SECRET_KEY = '_46k9km7r118l=)4h*d(91l%99yg_t*smlk4_wi)qbo_k^4-m_'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
+SITE_ID = 10
 
 ALLOWED_HOSTS = []
 
@@ -40,7 +41,10 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'django.contrib.sites',
     'edc_identifier.apps.AppConfig',
+    'edc_device.apps.AppConfig',
+    'edc_lab.apps.AppConfig',
     'edc_visit_schedule.apps.AppConfig',
+    'ambition_labs.apps.AppConfig',
     'ambition_visit_schedule.apps.AppConfig',
 ]
 
@@ -126,6 +130,7 @@ STATIC_URL = '/static/'
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
 
 if 'test' in sys.argv:
 
