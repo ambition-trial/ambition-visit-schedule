@@ -1,7 +1,7 @@
 from ambition_labs import chemistry_alt_panel, chemistry_panel, csf_chemistry_panel
 from ambition_labs import pk_plasma_panel_t12, pk_plasma_panel_t23
 from ambition_labs import pk_plasma_panel_t2, pk_plasma_panel_t4, pk_plasma_panel_t7
-from ambition_labs import qpcr_blood_panel, csf_stop_panel, qpcr23_blood_panel
+from ambition_labs import qpcr_blood_panel, csf_stop_panel, qpcr24_blood_panel
 from ambition_labs import serum_panel, plasma_buffycoat_panel, csf_pkpd_panel, wb_panel
 from ambition_labs import viral_load_panel, cd4_panel, fbc_panel, csf_panel, qpcr_csf_panel
 from edc_visit_schedule import FormsCollection, Requisition
@@ -67,7 +67,7 @@ requisitions_d1 = FormsCollection(
         panel=qpcr_blood_panel, required=True, additional=False),
     Requisition(
         show_order=125,
-        panel=qpcr23_blood_panel, required=True, additional=False),
+        panel=qpcr24_blood_panel, required=True, additional=False),
     Requisition(
         show_order=130,
         panel=pk_plasma_panel_t2, required=False, additional=False),

@@ -14,7 +14,7 @@ class TestVisitSchedule(TestCase):
             'ambition_prn.deathreport')
         self.assertEqual(
             visit_schedule.offstudy_model,
-            'ambition_prn.studyterminationconclusion')
+            'edc_offstudy.subjectoffstudy')
         self.assertEqual(
             visit_schedule.locator_model,
             'edc_locator.subjectlocator')
