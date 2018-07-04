@@ -1,3 +1,4 @@
+git+https://github.com/ambition-trial/ambition-sites@develop#egg=ambition-sites
 git+https://github.com/ambition-trial/ambition-labs.git@develop#egg=ambition_labs
 git+https://github.com/clinicedc/edc-base.git@develop#egg=edc_base
 git+https://github.com/clinicedc/edc-metadata.git@develop#egg=edc-metadata
@@ -11,3 +12,10 @@ git+https://github.com/erikvw/django-revision.git@develop#django-revision
 git+https://github.com/erikvw/django-crypto-fields.git@develop#django-crypto-fields
 git+https://github.com/clinicedc/edc-model-fields@develop#egg=edc-model-fields
 git+https://github.com/clinicedc/edc-label.git@develop#egg=edc_label
+git+https://github.com/clinicedc/edc-appointment.git@develop#egg=edc-appointment
+git+https://github.com/clinicedc/edc-facility.git@develop#egg=edc_facility
+git+https://github.com/clinicedc/edc-search@develop#egg=edc_search
+git+https://github.com/clinicedc/edc-model-admin.git@develop#egg=edc_model_admin
+git+https://github.com/clinicedc/edc-fieldsets.git@develop#egg=edc_fieldsets
+git+https://github.com/clinicedc/edc-form-validators.git@develop#egg=edc_form_validators
+git+https://github.com/clinicedc/edc-reportable.git@develop#egg=edc_reportable
