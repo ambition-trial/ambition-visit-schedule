@@ -1,3 +1,4 @@
+from ambition_sites.get_site_id import get_site_id
 from ambition_labs import chemistry_alt_panel, chemistry_panel, csf_chemistry_panel
 from ambition_labs import pk_plasma_panel_t12, pk_plasma_panel_t23
 from ambition_labs import pk_plasma_panel_t2, pk_plasma_panel_t4, pk_plasma_panel_t7
@@ -70,7 +71,8 @@ requisitions_d1 = FormsCollection(
         panel=qpcr24_blood_panel, required=True, additional=False),
     Requisition(
         show_order=130,
-        panel=pk_plasma_panel_t2, required=False, additional=False),
+        panel=pk_plasma_panel_t2, required=False, additional=False,
+        site_ids=[get_site_id('blantyre')]),
     Requisition(
         show_order=140,
         panel=pk_plasma_panel_t4, required=False, additional=False),
@@ -132,7 +134,8 @@ requisitions_d7 = FormsCollection(
         panel=qpcr_blood_panel, required=True, additional=False),
     Requisition(
         show_order=100,
-        panel=pk_plasma_panel_t2, required=False, additional=False),
+        panel=pk_plasma_panel_t2, required=False, additional=False,
+        site_ids=[get_site_id('blantyre')]),
     Requisition(
         show_order=110,
         panel=pk_plasma_panel_t4, required=False, additional=False),
