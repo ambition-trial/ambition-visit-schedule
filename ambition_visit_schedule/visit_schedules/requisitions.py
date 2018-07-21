@@ -1,7 +1,8 @@
+from ambition_sites.get_site_id import get_site_id
 from ambition_labs import chemistry_alt_panel, chemistry_panel, csf_chemistry_panel
 from ambition_labs import pk_plasma_panel_t12, pk_plasma_panel_t23
 from ambition_labs import pk_plasma_panel_t2, pk_plasma_panel_t4, pk_plasma_panel_t7
-from ambition_labs import qpcr_blood_panel, csf_stop_panel, qpcr23_blood_panel
+from ambition_labs import qpcr_blood_panel, csf_stop_panel, qpcr24_blood_panel
 from ambition_labs import serum_panel, plasma_buffycoat_panel, csf_pkpd_panel, wb_panel
 from ambition_labs import viral_load_panel, cd4_panel, fbc_panel, csf_panel, qpcr_csf_panel
 from edc_visit_schedule import FormsCollection, Requisition
@@ -67,10 +68,11 @@ requisitions_d1 = FormsCollection(
         panel=qpcr_blood_panel, required=True, additional=False),
     Requisition(
         show_order=125,
-        panel=qpcr23_blood_panel, required=True, additional=False),
+        panel=qpcr24_blood_panel, required=True, additional=False),
     Requisition(
         show_order=130,
-        panel=pk_plasma_panel_t2, required=False, additional=False),
+        panel=pk_plasma_panel_t2, required=False, additional=False,
+        site_ids=[get_site_id('blantyre')]),
     Requisition(
         show_order=140,
         panel=pk_plasma_panel_t4, required=False, additional=False),
@@ -132,7 +134,8 @@ requisitions_d7 = FormsCollection(
         panel=qpcr_blood_panel, required=True, additional=False),
     Requisition(
         show_order=100,
-        panel=pk_plasma_panel_t2, required=False, additional=False),
+        panel=pk_plasma_panel_t2, required=False, additional=False,
+        site_ids=[get_site_id('blantyre')]),
     Requisition(
         show_order=110,
         panel=pk_plasma_panel_t4, required=False, additional=False),
@@ -151,14 +154,14 @@ requisitions_d7 = FormsCollection(
 requisitions_d10 = FormsCollection(
     Requisition(
         show_order=20,
-        panel=chemistry_panel, required=False, additional=False),
+        panel=chemistry_panel, required=True, additional=False),
     name='requisitions_day10'
 )
 
 requisitions_d12 = FormsCollection(
     Requisition(
         show_order=20,
-        panel=chemistry_panel, required=False, additional=False),
+        panel=chemistry_panel, required=True, additional=False),
     name='requisitions_day12'
 )
 
