@@ -25,6 +25,12 @@ setup(
     long_description=README,
     zip_safe=False,
     keywords='ambition visit schedule',
+    install_requires=[
+        'ambition-labs',
+        'ambition-sites',
+        'edc-base',
+        'edc_visit_schedule',
+    ],
     classifiers=[
         'Environment :: Web Environment',
         'Framework :: Django',
