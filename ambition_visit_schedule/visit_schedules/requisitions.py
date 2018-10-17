@@ -1,6 +1,6 @@
 from ambition_sites.get_site_id import get_site_id
 from ambition_labs import chemistry_alt_panel, chemistry_panel, csf_chemistry_panel
-from ambition_labs import pk_plasma_panel_t12, pk_plasma_panel_t23
+from ambition_labs import pk_plasma_panel_t12, pk_plasma_panel_t23, pk_plasma_panel_t0
 from ambition_labs import pk_plasma_panel_t2, pk_plasma_panel_t4, pk_plasma_panel_t7
 from ambition_labs import qpcr_blood_panel, csf_stop_panel, qpcr24_blood_panel
 from ambition_labs import serum_panel, plasma_buffycoat_panel, csf_pkpd_panel, wb_panel
@@ -30,6 +30,10 @@ requisitions_prn = FormsCollection(
     Requisition(
         show_order=70,
         panel=csf_panel, required=False, additional=False),
+    Requisition(
+        show_order=80,
+        panel=csf_pkpd_panel, required=False, additional=False,
+        site_ids=[get_site_id('blantyre')]),
     name='requisitions_prn')
 
 requisitions_d1 = FormsCollection(
@@ -47,7 +51,8 @@ requisitions_d1 = FormsCollection(
         panel=csf_chemistry_panel, required=True, additional=False),
     Requisition(
         show_order=50,
-        panel=csf_pkpd_panel, required=False, additional=False),
+        panel=csf_pkpd_panel, required=True, additional=False,
+        site_ids=[get_site_id('blantyre')]),
     Requisition(
         show_order=60,
         panel=qpcr_csf_panel, required=True, additional=False),
@@ -71,7 +76,7 @@ requisitions_d1 = FormsCollection(
         panel=qpcr24_blood_panel, required=True, additional=False),
     Requisition(
         show_order=130,
-        panel=pk_plasma_panel_t2, required=False, additional=False,
+        panel=pk_plasma_panel_t2, required=True, additional=False,
         site_ids=[get_site_id('blantyre')]),
     Requisition(
         show_order=140,
@@ -119,7 +124,8 @@ requisitions_d7 = FormsCollection(
         panel=csf_panel, required=True, additional=False),
     Requisition(
         show_order=50,
-        panel=csf_pkpd_panel, required=False, additional=False),
+        panel=csf_pkpd_panel, required=True, additional=False,
+        site_ids=[get_site_id('blantyre')]),
     Requisition(
         show_order=60,
         panel=qpcr_csf_panel, required=True, additional=False),
@@ -133,8 +139,12 @@ requisitions_d7 = FormsCollection(
         show_order=90,
         panel=qpcr_blood_panel, required=True, additional=False),
     Requisition(
+        show_order=95,
+        panel=pk_plasma_panel_t0, required=True, additional=False,
+        site_ids=[get_site_id('blantyre')]),
+    Requisition(
         show_order=100,
-        panel=pk_plasma_panel_t2, required=False, additional=False,
+        panel=pk_plasma_panel_t2, required=True, additional=False,
         site_ids=[get_site_id('blantyre')]),
     Requisition(
         show_order=110,
@@ -177,7 +187,8 @@ requisitions_d14 = FormsCollection(
         panel=csf_panel, required=True, additional=False),
     Requisition(
         show_order=50,
-        panel=csf_pkpd_panel, required=False, additional=False),
+        panel=csf_pkpd_panel, required=True, additional=False,
+        site_ids=[get_site_id('blantyre')]),
     Requisition(
         show_order=60,
         panel=qpcr_csf_panel, required=True, additional=False),
