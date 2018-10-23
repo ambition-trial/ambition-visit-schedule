@@ -25,7 +25,6 @@ crfs_d1 = FormsCollection(
     Crf(show_order=5, model='ambition_subject.educationhoh', required=False),
     Crf(show_order=6, model='ambition_subject.bloodresult'),
     Crf(show_order=7, model='ambition_subject.lumbarpuncturecsf'),
-    Crf(show_order=8, model='ambition_subject.pkpdcrf', required=False),
     Crf(show_order=10, model='ambition_subject.microbiology', required=False),
     Crf(show_order=11, model='ambition_subject.radiology', required=False),
     name='day1'
@@ -44,7 +43,6 @@ crfs_d5 = FormsCollection(
 crfs_d7 = FormsCollection(
     Crf(show_order=1, model='ambition_subject.bloodresult'),
     Crf(show_order=2, model='ambition_subject.lumbarpuncturecsf'),
-    Crf(show_order=3, model='ambition_subject.pkpdcrf', required=False),
     name='day7'
 )
 
@@ -62,7 +60,6 @@ crfs_d14 = FormsCollection(
     Crf(show_order=1, model='ambition_subject.week2'),
     Crf(show_order=2, model='ambition_subject.bloodresult'),
     Crf(show_order=3, model='ambition_subject.lumbarpuncturecsf'),
-    Crf(show_order=4, model='ambition_subject.pkpdcrf', required=False),
     name='day14'
 )
 
