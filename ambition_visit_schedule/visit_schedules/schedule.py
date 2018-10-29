@@ -17,6 +17,8 @@ from .requisitions import (
 
 default_requisitions = None
 
+SCHEDULE = 'schedule'
+
 
 class Visit(BaseVisit):
     def __init__(self, crfs_unscheduled=None, requisitions_unscheduled=None,
@@ -33,7 +35,7 @@ class Visit(BaseVisit):
 
 # schedule for new participants
 schedule = Schedule(
-    name='schedule',
+    name=SCHEDULE,
     verbose_name='Day 1 to Week 16 Follow-up',
     onschedule_model='ambition_prn.onschedule',
     offschedule_model='ambition_prn.studyterminationconclusion',

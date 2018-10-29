@@ -43,6 +43,7 @@ crfs_d5 = FormsCollection(
 crfs_d7 = FormsCollection(
     Crf(show_order=1, model='ambition_subject.bloodresult'),
     Crf(show_order=2, model='ambition_subject.lumbarpuncturecsf'),
+    Crf(show_order=3, model='ambition_subject.pkpdcrf'),
     name='day7'
 )
 
