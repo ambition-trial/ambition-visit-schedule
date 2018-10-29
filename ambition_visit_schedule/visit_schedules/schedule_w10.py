@@ -2,6 +2,8 @@ from edc_visit_schedule import Schedule
 
 from .schedule import visit10, visit16
 
+SCHEDULE_W10 = 'schedule'
+
 # schedule for terminated participants.
 schedule_w10 = Schedule(
     name='schedule',
