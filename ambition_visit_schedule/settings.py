@@ -33,12 +33,14 @@ INSTALLED_APPS = [
     'edc_identifier.apps.AppConfig',
     'edc_device.apps.AppConfig',
     'edc_lab.apps.AppConfig',
+    'edc_notification.apps.AppConfig',
     'edc_visit_schedule.apps.AppConfig',
     'edc_registration.apps.AppConfig',
     'edc_appointment.apps.AppConfig',
     'edc_metadata.apps.AppConfig',
     'edc_action_item.apps.AppConfig',
     'ambition_labs.apps.AppConfig',
+    'ambition_lists.apps.AppConfig',
     'ambition_screening.apps.AppConfig',
     'ambition_subject.apps.AppConfig',
     'ambition_visit_schedule.apps.AppConfig',
@@ -130,6 +132,9 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 DASHBOARD_URL_NAMES = {}
+
+EMAIL_CONTACTS = {}
+EMAIL_ENABLED = False
 
 if 'test' in sys.argv:
 
