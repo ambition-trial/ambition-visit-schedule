@@ -1,13 +1,11 @@
 from edc_visit_schedule import FormsCollection, Crf
-from ambition_sites.get_site_id import get_site_id
 
 crfs_prn = FormsCollection(
     Crf(show_order=1, model='ambition_subject.bloodresult'),
     Crf(show_order=2, model='ambition_subject.lumbarpuncturecsf'),
     Crf(show_order=3, model='ambition_subject.microbiology'),
     Crf(show_order=4, model='ambition_subject.radiology'),
-    Crf(show_order=5, model='ambition_subject.pkpdcrf',
-        site_ids=[get_site_id('blantyre')]),
+    Crf(show_order=5, model='ambition_subject.pkpdcrf'),
     name='prn')
 
 crfs_unscheduled = FormsCollection(
