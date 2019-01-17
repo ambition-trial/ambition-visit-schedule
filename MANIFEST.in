@@ -1,1 +1,5 @@
-include AUTHORS CHANGES README LICENSE VERSION
+include MANIFEST.in
+include *.rst
+include *.txt
+recursive-include docs *.rst
+recursive-include ambition_visit_schedule/templates *
