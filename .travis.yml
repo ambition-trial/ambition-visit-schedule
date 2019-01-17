@@ -6,7 +6,8 @@ python:
 dist: xenial
 
 sudo: true
-
+env:
+  - DJANGO="Django>=2.1,<2.2"
 addons:
   apt_packages:
   - libcups2-dev
