@@ -1,4 +1,4 @@
-|pypi| |travis| |coverage|
+|pypi| |travis| |codecov| |downloads|
 
 
 ambition-visit-schedule
@@ -14,6 +14,8 @@ Ambition Visit Schedule
 .. |travis| image:: https://travis-ci.com/ambition-trial/ambition-visit-schedule.svg?branch=develop
     :target: https://travis-ci.com/ambition-trial/ambition-visit-schedule
     
-.. |coverage| image:: https://coveralls.io/repos/github/ambition-trial/ambition-visit-schedule/badge.svg?branch=develop
-    :target: https://coveralls.io/github/ambition-trial/ambition-visit-schedule?branch=develop
+.. |codecov| image:: https://codecov.io/gh/ambition-trial/ambition-visit-schedule/branch/develop/graph/badge.svg
+  :target: https://codecov.io/gh/ambition-trial/ambition-visit-schedule
 
+.. |downloads| image:: https://pepy.tech/badge/ambition-visit-schedule
+   :target: https://pepy.tech/project/ambition-visit-schedule
