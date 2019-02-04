@@ -1,9 +1,4 @@
 [run]
-omit =
-    */wsgi.py
-    setup.py
-    manage.py
-    */migrations/*
-    venv/*
-    runtests.py
-    .tox/*
+include = ambition_visit_schedule/*
+omit = ambition_visit_schedule/tests/*
+branch = 1
