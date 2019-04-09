@@ -1,9 +1,0 @@
-ambition-subject
-edc-action-item
-django-crypto-fields
-edc-registration
-edc-appointment
-edc-metadata
-ambition-screening
-edc-dashboard
-edc-subject-dashboard
