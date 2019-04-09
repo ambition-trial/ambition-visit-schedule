@@ -35,7 +35,6 @@ setup(
     install_requires=[
         'ambition-labs',
         'ambition-sites',
-        'edc-base',
         'edc_visit_schedule',
     ],
     classifiers=[
