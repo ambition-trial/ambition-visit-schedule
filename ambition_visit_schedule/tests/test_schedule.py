@@ -15,7 +15,7 @@ class TestVisitSchedule(TestCase):
 
     def test_visit_schedule_models(self):
 
-        self.assertEqual(visit_schedule.death_report_model, "ambition_prn.deathreport")
+        self.assertEqual(visit_schedule.death_report_model, "ambition_ae.deathreport")
         self.assertEqual(visit_schedule.offstudy_model, "edc_offstudy.subjectoffstudy")
         self.assertEqual(visit_schedule.locator_model, "edc_locator.subjectlocator")
 
