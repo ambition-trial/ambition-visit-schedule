@@ -5,7 +5,7 @@ crfs_prn = FormsCollection(
     Crf(show_order=2, model="ambition_subject.lumbarpuncturecsf"),
     Crf(show_order=3, model="ambition_subject.microbiology"),
     Crf(show_order=4, model="ambition_subject.radiology"),
-    Crf(show_order=5, model="ambition_subject.pkpdcrf"),
+    # Crf(show_order=5, model="ambition_subject.pkpdcrf"),
     name="prn",
 )
 
